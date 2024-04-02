@@ -413,6 +413,7 @@ address {
 .portfolio-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   /* gap: 48px 24px; */
   gap: 48px;
@@ -469,11 +470,16 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  /* align-items: baseline; */
 }
 
 .footer-container-logo {
   /* margin-right: 120px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
 }
 
 .footer-logo-studio {
@@ -498,6 +504,14 @@ footer {
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.02em;
+}
+
+.footer-container-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
 }
 
 .footer-text-social {
@@ -536,7 +550,11 @@ footer {
 }
 
 .footer-subscribe {
-  margin-left: 80px;
+  /* margin-left: 80px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-subscribe-text {
@@ -888,6 +906,38 @@ footer {
   }
 
   /**=**/
+
+  /**=FOOTER=**/
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footer-container-logo {
+    align-items: start;
+    justify-content: flex-start;
+    margin-right: 24px;
+    padding-left: 92px;
+  }
+
+  .footer-container-social {
+    align-items: start;
+    justify-content: flex-start;
+  }
+
+  .footer-subscribe {
+    align-items: start;
+    justify-content: flex-start;
+    padding-left: 92px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+  }
+
+  /**=**/
 }
 
 @media screen and (min-width: 1158px) {
@@ -953,6 +1003,28 @@ footer {
 
   .portfolio-list {
     gap: 48px 24px;
+  }
+
+  /**=**/
+
+  /**=FOOTER=**/
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container-logo {
+    margin-right: 120px;
+    padding-left: 0;
+  }
+
+  .footer-container-social {
+    margin-right: 80px;
+  }
+
+  .footer-subscribe {
+    padding-left: 0;
   }
 
   /**=**/
