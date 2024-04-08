@@ -136,7 +136,7 @@ address {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -38px;
   background-color: #404bbf;
   border-radius: 2px;
   height: 4px;
@@ -894,10 +894,10 @@ footer {
 }
 
 .modal-mob-menu {
-  width: 320px;
-  min-height: 640px;
+  width: 100%;
+  min-height: 100%;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1017,6 +1017,10 @@ footer {
     margin-right: 120px;
   }
 
+  .header-contacts-link {
+    margin-bottom: 12px;
+  }
+
   /**=**/
 
   /**=HERO=**/
@@ -1072,7 +1076,7 @@ footer {
   }
 
   .portfolio-item {
-    /* width: calc((100% - 24px) / 2); */
+    width: calc((100% - 24px) / 2);
   }
 
   /**=**/
@@ -1161,8 +1165,20 @@ footer {
     gap: 40px;
   }
 
+  .header-contacts-item {
+    font-size: 16px;
+  }
+
   .header-logo {
     margin-right: 76px;
+  }
+
+  .header-contacts-link {
+    margin-bottom: 0;
+  }
+
+  .current::after {
+    bottom: -25px;
   }
 
   /**=**/
@@ -1238,6 +1254,10 @@ footer {
 
   .portfolio-list {
     gap: 48px 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
   }
 
   /**=**/
