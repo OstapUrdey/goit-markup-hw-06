@@ -1094,11 +1094,13 @@ footer {
     align-items: start;
     justify-content: flex-start;
     margin-right: 24px;
+    margin-bottom: 0;
   }
 
   .footer-container-social {
     align-items: start;
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .footer-subscribe {
